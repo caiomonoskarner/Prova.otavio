@@ -1,0 +1,105 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.formulario {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.formulario input {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* Cor de fundo do input */
+}
+
+.formulario .button-container {
+    text-align: center;
+}
+
+.formulario button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #45a049;
+}
+
+.tabela {
+    margin-left: 20px;
+    background-color: #fff; /* Cor de fundo da tabela */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.tabela h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.tabela table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela th, .tabela td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+.tabela th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.tabela tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.mensagem-erro {
+    color: red;
+    font-weight: bold;
+}
+
+.reprovado {
+    background-color: #FFC0CB;
+}
+
+.reprovado td {
+    background-color: #FFC0CB;
+}

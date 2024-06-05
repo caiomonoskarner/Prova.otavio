@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Notas</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Formulário -->
+        <div class="formulario">
+            <h2>Formulário de Notas</h2>
+            <form id="formNotas">
+                <label for="matricula">Matrícula do Aluno:</label>
+                <input type="text" id="matricula" name="matricula">
+                
+                <label for="nome">Nome do Aluno:</label>
+                <input type="text" id="nome" name="nome">
+                
+                <label for="nota1">Nota 1º Bimestre:</label>
+                <input type="number" id="nota1" name="nota1" min="0" max="10">
+                <span id="nota1Erro" class="mensagem-erro"></span>
+                
+                <label for="nota2">Nota 2º Bimestre:</label>
+                <input type="number" id="nota2" name="nota2" min="0" max="10">
+                <span id="nota2Erro" class="mensagem-erro"></span>
+        
+                <!-- Adicionei um div ao redor do botão para poder estilizá-lo -->
+                <div class="button-container">
+                    <button type="button" id="adicionarAlunoBtn">Adicionar Aluno</button>
+                </div>
+            </form>
+        </div>
+        
+        <!-- Tabela -->
+        <div class="tabela">
+            <h2>Tabela de Notas</h2>
+            <table id="tabelaNotas">
+                <thead>
+                    <tr>
+                        <th>Matrícula</th>
+                        <th>Nome do Aluno</th>
+                        <th>Nota 1º Bimestre</th>
+                        <th>Nota 2º Bimestre</th>
+                        <th>Média</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
